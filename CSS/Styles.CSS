@@ -1,0 +1,396 @@
+/* for the colour scheme of my website I decided to go with a complementary tone again, although this time im using vastly different colours,
+orange and blue.
+
+for my first colour i decided to use #007DFF or a sky blue. I chose this because I think the color looks really nice and just like
+JoeyBada$$ music, the sky is infinite, just like the amount of things he covers in his songs. blue can also represent inspiration, and an artist like him has definitely inspired many people to,
+be better, and do better.
+
+for my secondary colour i decided to use #FF8200 or a bright orange, i decided to use this color because first of all its apart of my color scheme,
+but also the fact of what it represents, energy. Joeys songs just match this colour perfectly as they are always filled with so much energy and truthfullness.
+
+for my contrast colour i decided to use a darker version of my sky blue, #002e5f or ocean blue, can go really well with my website and kind of "pop-out" some of my content,
+since i have such light colours all around, having a dark colour like this to contrast will work wonderfully.
+
+for my 2 shades i just went with white and black, white just to go well on its own, and black to fit the contrast for my website
+*/
+
+
+@font-face {
+    font-family: 'Nutino-sans bold'; /*how to add external fonts*/
+    src: url('/fonts/nunito-sans.bold.ttf') format('truetype');
+}
+
+* {
+    margin: 0; /*margin set for all elements*/
+    padding: 0; /*padding set for all elements*/
+    box-sizing: border-box; /*box-sizing set for all elements*/
+    font-family: nutino-sans bold, sans-serif; /*font set for all elements*/
+    color: white; /*turns all text white*/
+    line-height: 1.4rem; /*line height set for all, typography rules*/
+}
+
+body {
+    width: 100%; /*makes it so body takes up whole screen*/
+    height: 100%;
+    background-color: #007DFF; /*color for websites background*/
+    position: relative; 
+}
+
+/* Navbar */
+nav {
+    z-index: 101; /* z index makes it so it appears over everything*/
+    width: 100%; /*makes it so nav takes up whole screen width*/
+    padding: 1rem 2rem; /*padding for nav*/
+    display: flex; /*turns to flex display*/
+    align-items: center; /*aligns items in nav to center*/
+    justify-content: space-between; /*spaces out items in nav*/
+    background-color: rgba(0, 0, 0, 0.4); /*since i wanted to have my navbar transparent but didnt want anything else within it transparent i used this*/
+    position: fixed; /*makes it so nav stays at top*/
+    top: 0; /*makes it so nav stays at top*/
+    left: 0;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /*transition for background color, if you hover over it, turns solid*/
+}
+
+nav:hover {
+    background-color: rgba(0, 0, 0, 1); 
+}
+
+#space{
+    width: 55rem; /*space between logo and nav items*/
+}
+
+nav img {
+    width: 4rem; /*logo size*/
+}
+
+nav ul {
+    display: flex;
+    list-style: none; /*removes bullet points from list*/
+}
+
+nav ul li {
+    margin-left: 2rem; /*margin between nav items for more spacing*/
+}
+
+/*i only started doing my code like this where i address multiple elements because of my logos hitbox acting up, 
+by doing it this way my logos hitbox acts fine now, but before it looked the same but yet was too big.*/
+nav ul li a {
+    display: inline-block;
+    color: white; /*color for nav items text*/
+    text-decoration: none; /*removes underline from nav items*/
+    font-size: 1rem; /*font size for nav items*/
+    font-weight: bold; /*makes nav items bold*/
+    margin-top: 1rem;
+    -webkit-transition: color 0.3s ease, box-shadow 0.7s ease;
+    -moz-transition: color 0.3s ease, box-shadow 0.7s ease;
+    -ms-transition: color 0.3s ease, box-shadow 0.7s ease;
+    -o-transition: color 0.3s ease, box-shadow 0.7s ease;
+    transition: color 0.3s ease, box-shadow 0.7s ease; /*transition for color and box-shadow on hover*/
+}
+
+nav li :hover {
+    color: #FF8200;
+    -webkit-box-shadow: #FF8200 0rem 0.15rem;
+    -moz-box-shadow: #FF8200 0rem 0.15rem;
+    -ms-box-shadow: #FF8200 0rem 0.15rem;
+    -o-box-shadow: #FF8200 0rem 0.15rem;
+    box-shadow: #FF8200 0rem 0.15rem; /*adds underline*/
+}
+
+#line{
+    -webkit-transform: translateX(-90%);
+    -moz-transform: translateX(-90%);
+    -ms-transform: translateX(-90%);
+    -o-transform: translateX(-90%);
+    transform: translateX(-90%); /*styling for the white line in my nav to fit under my elements*/
+    pointer-events: none; /*makes it so you cant click or interact the line*/
+    font-size: 2.75rem; /*font size for the line*/
+    margin-top: 1rem;
+}
+
+#gallery {
+    position: relative; /*makes it so the gallery is relative to the page*/
+    width: 100%;
+    margin: 0; /*removes default margin*/
+}
+
+#gallery img {
+    width: 100%;
+    display: block; /*makes it so the image takes up the whole width of the gallery*/
+}
+
+.overlay {
+    margin-top: 10rem; /*margin for the overlay to appear below the navbar and ontop of the display*/
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /*so i can use flexbox*/
+    flex-direction: column; /*stack items vertically*/
+    justify-content: center; /*center items vertically*/
+    align-items: center; /*center items horizontally*/
+    color: #fff; 
+    padding: 2rem; /*padding for overlay*/
+    text-align: center; /*center text in overlay*/
+    z-index: 10; /*makes it so overlay appears above my picture*/
+}
+
+#watch-button {
+    font-size: 1.5rem; /*font size for watch button*/
+    font-weight: bold; 
+    text-decoration: none; /*removes underline from watch button*/
+    color: rgb(255, 255, 255);
+    padding: 0.8rem 1.5rem; /*padding for watch button*/
+    margin-bottom: 1rem; /*margin for watch button*/
+    border: white 0.2rem solid; /*border for watch button*/
+    border-radius: 0.5rem; /*rounded corners for watch button*/
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    -ms-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    transition: background 0.3s ease; /*transition for background color change on hover*/
+}
+
+#watch-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #007DFF; /*changes color to black when hovered*/
+}
+
+#text-overlay {
+    font-size: 1rem; /*font size for text overlay*/
+    margin-top: 0.5rem; /*margin for text overlay*/
+    opacity: 0.8; /*makes text overlay slightly transparent*/
+}
+
+#downarrow {
+    font-size: 2rem;
+    margin-top: 1rem;
+    -webkit-animation: bounce 1.5s infinite;
+    -moz-animation: bounce 1.5s infinite;
+    -ms-animation: bounce 1.5s infinite;
+    -o-animation: bounce 1.5s infinite;
+    animation: bounce 1.5s infinite; /*bounces the down arrow*/
+}
+
+@-webkit-keyframes bounce {
+    0%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(8%);
+        transform: translateY(8%);
+    }
+}
+
+@-moz-keyframes bounce {
+    0%, 100% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -moz-transform: translateY(8%);
+        transform: translateY(8%);
+    }
+}
+
+@-ms-keyframes bounce {
+    0%, 100% {
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -ms-transform: translateY(8%);
+        transform: translateY(8%);
+    }
+}
+
+@-o-keyframes bounce {
+    0%, 100% {
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -o-transform: translateY(8%);
+        transform: translateY(8%);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(8%);
+        -moz-transform: translateY(8%);
+        -ms-transform: translateY(8%);
+        -o-transform: translateY(8%);
+        transform: translateY(8%);
+    }
+}
+
+#banner {
+    position: relative; /*so i can use z index*/
+    display: block; /*makes it so the banner is a block element*/
+    width: 100%; /*makes it so the banner takes up the whole width of the screen*/
+    margin-left: 0.5%; /*centers banner*/
+    z-index: 1;
+}
+
+#banner-overlay{
+    position: absolute; 
+    margin-left: 15rem; /*centers the overlay text*/
+    text-align: center; /*centers text in overlay*/
+    font-size: 3rem; /*font size*/
+    -webkit-transform: translateY(-500%);
+    -moz-transform: translateY(-500%);
+    -ms-transform: translateY(-500%);
+    -o-transform: translateY(-500%);
+    transform: translateY(-500%); /*moves the overlay text up ontop of the banner*/
+    z-index: 2; /*so it appears ontop of the banner*/
+}
+
+h1{
+    text-align: center; /*centers the h1 text*/
+    font-size: 3rem; /*font size*/
+    margin-top: 2rem; /*margins*/
+    margin-bottom: 2rem;
+    color: white; /*text color*/
+}
+
+.video-gallery { 
+    display: grid; /*so i can use grid*/
+    grid-template-columns: repeat(3, 1fr); /*3 columns of equal width*/
+    gap: 1.25rem; /*how big of a gap between each video*/
+    margin-left: 2.5%; /*centers the video gallery*/
+    right: 0;
+    width: 95%; /* adds null space around*/
+} 
+
+.video-card { 
+    background-color: #FF8200; 
+    padding: 0.625rem; /*adds padding*/
+    border-radius: 0.5rem; /*rounded corners*/
+    text-align: center; /*centers text*/
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /*transition for background color change on hover*/
+    margin: 0; 
+} 
+
+a{
+    text-decoration: none; /*removes underline from links*/
+    color: rgb(255, 255, 255); /*text color for links*/
+}
+
+.video-card:hover { 
+    background-color: #002e5f; /*changes background color on hover*/
+} 
+
+figure img { 
+    width: 100%; /*makes it so the image takes up whole space*/
+    height: auto; /*will keep the aspect ratio of the image*/
+    border-radius: 0.5rem; /*rounded corners for images*/
+} 
+
+figcaption { 
+    margin-top: 0.75rem; /*margin for caption*/
+    font-size: 1rem; /*font size for caption*/
+    line-height: 1.4rem; /*line height for caption*/
+} 
+
+footer {
+    position: relative;
+    margin-top: 10rem; /*margin for footer to appear below everything else*/
+    width: 100%; /*makes it so footer takes up whole width of screen*/
+    height: 5rem; /*height for footer*/
+    color: white; /*text color for footer*/
+    display: flex; /*so i can use flexbox*/
+    justify-content: center; /*centers items in footer*/
+    align-items: center; /*centers items*/
+    font-size: 1rem; /*font size for footer*/
+    background-color: rgba(255, 166, 0, 1); /*background color for footer*/
+}
+footer li{
+    list-style: none; /*removes bullet points from footer list*/
+    display: inline-block; /*makes it so the list items are inline*/
+    margin: 0 1rem; /*margin for spacing between list items*/
+}
+footer p {
+    margin: 0; /*removes default margin from paragraph*/
+    padding: 0.5rem; /*padding for paragraph*/
+    text-align: center; /*centers text in paragraph*/
+}
+footer a {
+    color: white; /*text color for links in footer*/
+    text-decoration: none; /*removes underline from links in footer*/
+    font-weight: bold;
+}
+
+footer img {
+    width: 2rem; /*logo size for footer*/
+    margin-left: 4rem;
+    margin-right: 4rem; /*adds spacing between symbols*/
+}
+
+.content-wrapper {
+    margin-top: 2rem; /*margin for content wrapper to appear below navbar*/
+    display: flex;
+    gap: 2rem; /*spacing between content boxes*/
+    padding: 2rem; 
+}
+
+/*since all of these follow the same styling i did it like this*/
+#image-box,
+#story-box,
+#albumn-box {
+    width: 50rem; /*width for content boxes*/
+    height: 40rem; /*height for content boxes*/
+    box-sizing: border-box; 
+    background-color: #FF8200; /*background color for content boxes*/
+    overflow: hidden; /*hides any overflow */
+    font-size: 3rem;
+    color: black;
+}
+
+#image-box img {
+    width: 100%; /*makes it so the image takes up the whole width of the box*/
+    height: 100%; 
+    object-fit: cover; /*makes it so the image covers the whole box without stretching*/
+}
+
+/*same styling*/
+#story-box,
+#albumn-box {
+    padding: 1rem; /*padding for content boxes*/
+    text-align: left; /*makes it look like a written piece*/
+    line-height: 1.5; /*line height for content boxes*/
+}
+
+.buttons {
+    display: flex; /*so i can use flexbox*/
+    justify-content: center; /*centers buttons*/
+    gap: 1.5rem; /*spacing between buttons*/
+    margin-top: 2rem; /*margin for buttons to appear below content*/
+}
+
+button {
+    padding: 0.8rem 1.5rem; /*padding for buttons*/
+    background-color: #FF8200; /*background color for buttons*/
+    color: white; /*text color for buttons*/
+    border: none; /*removes border from buttons*/
+    border-radius: 999px; /*rounded corners for buttons*/
+    font-size: 1rem; /*font size for buttons*/
+    cursor: pointer;
+}

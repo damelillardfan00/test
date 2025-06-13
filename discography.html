@@ -1,0 +1,99 @@
+<!--all of his albums info were gotten from https://en.wikipedia.org/wiki/Joey_Badass-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discography</title>
+    <!-- Linking for external CSS -->
+    <link rel="stylesheet" href="CSS/Styles.CSS"> 
+</head>
+<style>
+    #album-text{
+        color: black;
+        font-size: 2rem;
+        line-height: 2.8rem; /*1.4x the font*/
+    }
+</style>
+<body>
+<!--this is my navbar-->
+<nav> 
+    <ul> 
+        <!--these are my navbar list items, and logo-->
+        <a href="index.html"><img src="images/ChatGPT Image Jun 9, 2025, 08_47_13 PM.png"></a>
+        <div id="space"></div> 
+        <li><a href="index.html">VIDEOS</a></li> 
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="discography.html">DISCOGRAPHY</a></li> 
+        <li><a href="tour.html">TOURS</a></li> 
+        <li><a href="https://www.joeybadass.store/">STORE</a></li>
+        <p id="line" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">__________________________</p>
+    </ul> 
+</nav> 
+<!--this is the header for this part of my website-->
+<header><h1 style="margin-top: 15rem;">Exploring Personas: <span style="color: orange;">JoeyBada$$</span></h1></header>
+<div class="content-wrapper">
+<!--this is for the image part of the page-->
+<div id="image-box">
+    <img tabindex="1" id="albumn-image" src="images/default.jpg" alt="Joey Bada$$">
+</div>
+<!--this is for the text part of my page-->
+<div id="albumn-box">
+    <p tabindex="1" id="album-text">
+    Click a button to learn about Joey Bada$$ projects.
+    </p>
+</div>
+</div>
+<!--this div is just to pair all of my buttons together, each one is linked with javascript that will change it to a different albumn
+and its albumn cover.-->
+<div class="buttons">
+    <button onclick="changeAlbum(0)">1999</button>
+    <button onclick="changeAlbum(1)">Summer Knights</button>
+    <button onclick="changeAlbum(2)">All Amerikkkan Bada$$</button>
+    <button onclick="changeAlbum(3)">2000</button>
+</div>
+</section>
+
+<!--this is my footer-->
+<footer>
+    <ul>
+        <!--this is my footer list items, each logo takes you back to joeybada$$es social media.-->
+        <li><a href="https://www.instagram.com/joeybadass/" target="_blank"><img src="images/instagram.png" alt="Black Instagram camera icon with rounded edges and a small circle inside representing the lens"/></a></li>
+        <li><a href="https://soundcloud.com/joeyBADASS" target="_blank"><img src="images/soundcloud.jpg" alt="Black cloud shape with 10 horizontal lines on the left side"/></a></li>
+        <li><p>Charan&copy;</p></li>
+        <li><a href="https://open.spotify.com/artist/2P5sC9cVZDToPxyomzF1UH" target="_blank"><img src="images/spotify.png" alt="Black circle containing three curved horizontal lines, representing sound waves"></a></li>
+        <li><a href="https://x.com/joeyBADASS" target="_blank"><img src="images/twitter.jpg" alt="Black silhouette of a bird in mid-flight with wings extended upwards"/></a></li>
+    </ul>
+</footer>
+<script>
+// all album data, each object holds an image path and album description.
+const albumData = [
+    {
+        image: "images/1999.jpg",
+        text: "1999: Joey Bada$$’s debut mixtape, *1999*, burst onto the scene with a nostalgic yet fresh take on ’90s hip-hop. The project showcased his sharp lyricism and boom-bap beats, quickly earning him respect in the underground rap community. Praised for its raw energy and storytelling, *1999* solidified Joey’s place as a rising star who honors hip-hop’s golden era while pushing it forward."
+    },
+    {
+        image: "images/summmer-knights.jpg",
+        text: "Summer Knights: With *Summer Knights*, Joey expanded his sound, blending smooth, jazzy production with introspective lyrics. This mixtape highlighted his growth as an artist, balancing street narratives with more personal themes. It captured the feeling of youthful ambition and summer vibes, offering fans a more polished but still authentic Joey Bada$$ experience."
+    },
+    {
+        image: "images/amerkkkan bad.png",
+        text: "All Amerikkkan Bada$$: Joey’s debut studio album, *All Amerikkkan Bada$$*, marked a bold, politically charged statement. Tackling issues like systemic racism, inequality, and social justice, the album combined sharp commentary with gritty beats. This project elevated Joey from underground favorite to a socially conscious voice, resonating deeply during a turbulent time in America."
+    },
+    {
+        image: "images/2000.png",
+        text: "2000: Released as a follow-up to *1999*, *2000* continued Joey’s tradition of classic hip-hop sound fused with modern influences. The mixtape featured sharp lyricism and collaborations that showcased his versatility. *2000* reinforced his status as a key figure in hip-hop’s new generation, bridging the gap between old-school respect and new-school innovation."
+    }
+];
+// Function to change the image and text based on button clicked
+function changeAlbum(index) {
+//get the image and pargraph by id
+    const image = document.getElementById("albumn-image");
+    const text = document.getElementById("album-text");
+//changes the image and pargraph
+    image.src = albumData[index].image;
+    text.textContent = albumData[index].text;
+};
+</script>
+</body>

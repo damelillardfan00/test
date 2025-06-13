@@ -1,0 +1,213 @@
+<!-- 
+Name:Charan Gambhir 
+Course: Web Development 10S 
+Teacher: Ms. Hoitink 
+School: Pembina Trails Collegiate (PTC) 
+Date Last Modified:6/12/2025 
+--> 
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Joeybada$$</title> 
+
+<!--linking for external CSS-->
+    <link rel="stylesheet" href="CSS/Styles.CSS"> 
+</head> 
+<body> 
+
+<!--navbar items-->
+<nav> 
+    <ul> 
+        <!--this is my logo for my navbar, the image was made by: chatgpt.com-->
+        <a href="index.html"><img src="images/ChatGPT Image Jun 9, 2025, 08_47_13 PM.png"></a>
+        <div id="space"></div> 
+        <!--these are the links to my other pages-->
+        <li><a href="index.html">VIDEOS</a></li> 
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="discography.html">DISCOGRAPHY</a></li> 
+        <li><a href="tour.html">TOURS</a></li> 
+        <li><a href="https://www.joeybadass.store/">STORE</a></li>
+        <!--this is a line that goes across the navbar, it is just for aesthetics-->
+        <p id="line" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">__________________________</p>
+    </ul> 
+</nav> 
+
+<!--this is the first video that i chose to display-->
+    <section tabindex="1" id="gallery"> 
+    <img src="images/sorrynotsorry.jpg" alt="A stylish man wearing a luxurious fur coat and crisp white suit walks through a modern, dimly lit urban interior with neon lights and glass panels behind him, exuding confidence and authority." >
+
+    <!--this was made for the overlay that i wanted to put ontop of the video-->
+    <div class="overlay"> 
+<!--the A tag makes it take you back to the OG video on youtube, this is the link->
+ https://www.youtube.com/watch?v=w30H9X86wmg&pp=ygUbam9leSBiYWRhJCQgc29ycnkgbm90IHNvcnJ5, target blank is there so it opens a new tab-->
+        <a tabindex="1" href="https://www.youtube.com/watch?v=w30H9X86wmg&pp=ygUbam9leSBiYWRhJCQgc29ycnkgbm90IHNvcnJ5" target="_blank" id="watch-button">
+            WATCH THE VIDEO:<br>
+            Sorry Not Sorry - Joey Bada$$<br>
+            &#9654;
+        </a> 
+        <!--this is here for further instructions if you wanted to check out the webpage more-->
+        <p id="text-overlay">OR SCROLL FOR OTHER VIDEOS!</p> 
+        <p id="downarrow">&downarrow;</p>
+    </div> 
+    </section>
+
+<!--i placed an image here for styling-->
+<div id="banner">
+<!--the image was made by Chatgpt.com-->
+    <img src="images/banner.png" alt="a concert with many many people, including the main artist Joeybada$$ performing on stage. the image shows 4 large stage lights and many people with the crowd."/>
+</div>
+<!--this quote was used in Joeybada$$'s song "Snakes" by: JoeyBada$$-->
+<header><h1 tabindex="1" id="banner-overlay">"ACTIONS SPEAK LOUDER THAN WORDS"</h1></header>
+
+<!--this is the header for the other videos section-->
+<header><h1 tabindex="1">OTHER VIDEOS:</h1></header>
+
+
+<!--this is the section that contains all the other videos that i chose to display-->
+<section class="video-gallery"> 
+
+<!--its the same thing all the way down, i use an image and caption to explain what the video is and who its made by,
+the a tags take you to a different tab, for my sources i used: 
+“Joey Bada$$.” YouTube, www.youtube.com/channel/UCG8R0ZMHBkRzBT1DWK9wT5w. Accessed 9 . Jun. 2025
+-->
+
+<!--alt text was made by me but i partially used chatgpt to create the base.-->
+
+
+<!--original link for image and video here:
+Joey Bada$$. “Joey Bada$$ - Sorry Not Sorry (Official Video).” YouTube, 20 Jan. 2025, www.youtube.com/watch?v=w30H9X86wmg. Accessed 12 June 2025.
+-->
+    <a class="video-link" href="https://www.youtube.com/watch?v=w30H9X86wmg" target="_blank">
+    <figure class="video-card"> 
+        <img src="images/hqdefault.avif" alt="A stylish man wearing a luxurious fur coat and crisp white suit walks through a modern, dimly lit urban interior with neon lights and glass panels behind him, exuding confidence and authority.">
+        <figcaption class="video-title">SORRY NOT SORRY<br>- Joey Bada$$</figcaption> 
+    </figure> 
+    </a>
+
+<!--original link for image and video here:
+Joey Bada$$. “Joey Bada$$ & Chlöe - TELL ME (Official Visualizer).” YouTube, 17 Sept. 2024, www.youtube.com/watch?v=UfZCoPuoCfk. Accessed 12 June 2025.
+‌-->
+    <a class="video-link" href="https://www.youtube.com/watch?v=UfZCoPuoCfk" target="_blank">
+    <figure class="video-card"> 
+        <img src="images/hqdefault (2).avif" alt="Close-up in black and white of a young man wearing a durag, holding two hands up to his face praying with intense eyes peering through, conveying a contemplative and emotional tone"> 
+        <figcaption class="video-title">TELL ME<br>- Joey Bada$$ & Chlöe</figcaption> 
+    </figure> 
+    </a>
+
+<!--original link for image and video here:
+Joey Bada$$. “Joey Bada$$ - the Ruler’s Back (Official Video).” YouTube, 1 Jan. 2025, www.youtube.com/watch?v=2msMRPdMdWc. Accessed 13 June 2025.
+-->
+    <a class="video-link" href="https://www.youtube.com/watch?v=2msMRPdMdWc" target="_blank">
+    <figure class="video-card"> 
+        <img src="images/hqdefault (1).avif" alt="A person in bright red pants and a hoodie stands confidently in front of a black luxury SUV, parked on a rural driveway with a beige house and barren trees in the background, under a golden sunset sky.">
+        <figcaption class="video-title">THE RULER’S BACK<br>- Joey Bada$$</figcaption> 
+    </figure> 
+    </a>
+
+<!--original link for image and video here:
+“Joey Bada$$ - Eulogy (Official Video).” Www.youtube.com, www.youtube.com/watch?v=UjTwAg_A-SM.
+-->
+    <a class="video-link" href="https://www.youtube.com/watch?v=UjTwAg_A-SM" target="_blank">
+    <figure class="video-card"> 
+        <img src="images/hqdefault (3).avif" alt="A relaxed man reclines on a unique circular modern lounge chair inside a sleek, colorfully designed living space with cactus plants and neatly arranged shelves, looking contemplative with his legs crossed.">
+        <figcaption class="video-title">EULOGY<br>- Joey Bada$$</figcaption> 
+    </figure> 
+    </a>
+
+<!--original link for image and video here:
+ JoeyBadassVEVO. “Joey Bada$$ - Fallin’ (Official Video).” YouTube, 6 Apr. 2023, www.youtube.com/watch?v=yGvrSfsAeqM. Accessed 13 June 2025.
+-->
+    <a class="video-link" href="https://www.youtube.com/watch?v=yGvrSfsAeqM" target="_blank">
+    <figure class="video-card"> 
+        <img src="images/hqdefault (4).avif" alt="A shirtless man with chains and tattoos raises his hand in a dimly lit bedroom with warm golden lighting, surrounded by cluttered personal items and casting dramatic shadows on the wall." > 
+        <figcaption class="video-title">FALLIN’<br>- Joey Bada$$</figcaption> 
+    </figure> 
+    </a>
+
+<!--original link for image and video here:
+JoeyBadassVEVO. “Joey Bada$$ - Show Me (Official Video).” YouTube, 1 Mar. 2023, www.youtube.com/watch?v=_6xNSq4LYqU. Accessed 13 June 2025.
+‌-->
+    <a class="video-link" href="https://www.youtube.com/watch?v=_6xNSq4LYqU" target="_blank">
+    <figure class="video-card"> 
+        <img src="images/hqdefault (5).avif" alt="Two young adults share an intense, emotionally charged moment as they lean in close with foreheads touching in a softly lit space, eyes closed in a gesture of deep connection or reconciliation."> 
+        <figcaption class="video-title">SHOW ME<br>- Joey Bada$$</figcaption> 
+    </figure> 
+    </a>
+
+<!--original link for image and video here:
+Joey Bada$$. “Joey Bada$$ - Zipcodes (Official Video).” YouTube, 14 July 2022, www.youtube.com/watch?v=Fy3070QgHV0. Accessed 13 June 2025.
+-->
+    <a class="video-link" href="https://www.youtube.com/watch?v=Fy3070QgHV0" target="_blank">
+    <figure class="video-card"> 
+        <img src="images/hqdefault (6).avif" alt= "A man dressed in oversized white clothing gestures with one hand in a dim, vintage-style hallway, with arched windows casting warm light through the frame."> 
+        <figcaption class="video-title">ZIPCODES<br>- Joey Bada$$</figcaption> 
+    </figure> 
+    </a>
+
+<!--original link for image and video here:
+Joey Bada$$. “Joey Bada$$ - Where I Belong (Official Video).” YouTube, 30 June 2022, www.youtube.com/watch?v=XoZtqXNLcW8. Accessed 13 June 2025.
+-->
+    <a class="video-link" href="https://www.youtube.com/watch?v=XoZtqXNLcW8" target="_blank">
+    <figure class="video-card"> 
+        <img src="images/hqdefault (7).avif" alt="Close-up of a man adjusting a white and blue baseball cap that reads ‘NEW YORK’ in block letters, standing in front of a brick building, exuding pride and focus." > 
+        <figcaption class="video-title">WHERE I BELONG<br>- Joey Bada$$</figcaption> 
+    </figure> 
+    </a>
+
+<!--original link for image and video here:
+“Joey Bada$$ - Temptation.” Www.youtube.com, www.youtube.com/watch?v=mikkqeCsfIc.
+-->
+    <a class="video-link" href="https://www.youtube.com/watch?v=mikkqeCsfIc" target="_blank">
+    <figure class="video-card"> 
+        <img src="images/hqdefault (8).avif" alt="A young man with short, twisted hair leans casually on a staircase railing in a warmly lit hallway, with golden tones casting shadows on the stairs and wall panels behind him." > 
+        <figcaption class="video-title">TEMPTATION<br>- Joey Bada$$</figcaption> 
+    </figure> 
+    </a>
+
+<!--original link for image and video here:
+JoeyBadassVEVO. “Joey Bada$$ - the REV3NGE (Official Video).” YouTube, 13 Jan. 2022, www.youtube.com/watch?v=OrNyZ7X87sE. Accessed 13 June 2025.
+-->
+    <a class="video-link" href="https://www.youtube.com/watch?v=OrNyZ7X87sE" target="_blank">
+    <figure class="video-card"> 
+        <img src="images/hqdefault (9).avif" alt="A man in a deep red suit stands with his head bowed, surrounded by golden smoke or stage fog, lit dramatically from above, creating a moody and surreal performance atmosphere."> 
+        <figcaption class="video-title">THE REV3NGE<br>- Joey Bada$$</figcaption> 
+    </figure>
+    </a>
+
+<!--original link for image and video here:
+JoeyBadassVEVO. “Joey Bada$$ - Paper Trail$.” YouTube, 17 July 2015, www.youtube.com/watch?v=t5Ps8Nw-TWI. Accessed 7 May 2025.
+-->
+    <a class="video-link" href="https://www.youtube.com/watch?v=t5Ps8Nw-TWI" target="_blank">
+    <figure class="video-card"> 
+        <img src="images/hqdefault (10).avif" alt="Black-and-white close-up of a man in a hoodie standing in an alleyway, staring intensely at the camera with a serious and determined expression, surrounded by blurred urban scenery."> 
+        <figcaption class="video-title">PAPER TRAILS<br>- Joey Bada$$</figcaption> 
+    </figure> 
+    </a>
+
+<!--original link for image and video here:
+JoeyBadassVEVO. “Joey Bada$$ - My Yout Ft. Maverick Sabre.” YouTube, 4 Dec. 2013, www.youtube.com/watch?v=KQ5hLolI7ro. Accessed 13 June 2025.
+-->
+    <a class="video-link" href="https://www.youtube.com/watch?v=KQ5hLolI7ro" target="_blank">
+    <figure class="video-card"> 
+        <img src="images/hqdefault (11).avif" alt="A young man stands in front of a field of green crops in natural daylight, wearing a black shirt and holding a leafy plant over his shoulder, suggesting a connection to nature or his roots." > 
+        <figcaption class="video-title">MY YOUT<br>- Joey Bada$$ ft. Maverick Sabre</figcaption> 
+    </figure> 
+    </a>
+</section> 
+
+<!--this is my footer-->
+<footer>
+    <ul>
+        <!--this is my footer list items, each logo takes you back to joeybada$$es social media.-->
+        <li><a href="https://www.instagram.com/joeybadass/" target="_blank"><img src="images/instagram.png" alt="Black Instagram camera icon with rounded edges and a small circle inside representing the lens"/></a></li>
+        <li><a href="https://soundcloud.com/joeyBADASS" target="_blank"><img src="images/soundcloud.jpg" alt="Black cloud shape with 10 horizontal lines on the left side"/></a></li>
+        <li><p>Charan&copy;</p></li>
+        <li><a href="https://open.spotify.com/artist/2P5sC9cVZDToPxyomzF1UH" target="_blank"><img src="images/spotify.png" alt="Black circle containing three curved horizontal lines, representing sound waves"></a></li>
+        <li><a href="https://x.com/joeyBADASS" target="_blank"><img src="images/twitter.jpg" alt="Black silhouette of a bird in mid-flight with wings extended upwards"/></a></li>
+    </ul>
+</footer>
+
+</body> 
+</html>

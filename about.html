@@ -1,0 +1,103 @@
+<!--all info about his story was obtained from https://en.wikipedia.org/wiki/Joey_Badass-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Linking for external CSS -->
+    <link rel="stylesheet" href="CSS/Styles.CSS"> 
+</head>
+<style>
+    #story-text{
+        color: black;
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+</style>
+<body>
+<!--this is my navbar-->
+<nav> 
+    <ul> 
+        <!--these are my navbar list items-->
+        <a class="navbar" href="index.html"><img src="images/ChatGPT Image Jun 9, 2025, 08_47_13 PM.png"></a>
+        <div id="space"></div> 
+        <li><a href="index.html">VIDEOS</a></li> 
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="discography.html">DISCOGRAPHY</a></li> 
+        <li><a href="tour.html">TOURS</a></li> 
+        <li><a href="https://www.joeybadass.store/">STORE</a></li>
+        <p id="line" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">__________________________</p>
+    </ul> 
+</nav> 
+<!--this is my header for the next part of my website-->
+<header><h1 style="margin-top: 15rem;">Life Story: <span style="color: orange;">JoeyBada$$</span></h1></header>
+<!--this div will allow my styling to look good-->
+<div class="content-wrapper">
+    <!--this is fo the image part of the page-->
+<div id="image-box">
+    <img tabindex="1" id="story-image" src="images/default.jpg" alt="Joey Bada$$">
+</div>
+<!--this is for the text part of my page-->
+<div id="story-box">
+    <p tabindex="1" id="story-text">
+    Click a button to learn about Joey Bada$$.
+    </p>
+</div>
+</div>
+<!--each button is linked to java script, and every time you click one the image and story will change-->
+
+<div class="buttons">
+    <button onclick="changeStory(0)">Early Life</button>
+    <button onclick="changeStory(1)">Honorary Influences</button>
+    <button onclick="changeStory(2)">Humble Begginings</button>
+    <button onclick="changeStory(3)">Current Day</button>
+</div>
+</section>
+<!--this is my footer-->
+<footer>
+    <ul>
+        <!--this is my footer list items, each logo takes you back to joeybada$$es social media.-->
+        <li><a href="https://www.instagram.com/joeybadass/" target="_blank"><img src="images/instagram.png" alt="Black Instagram camera icon with rounded edges and a small circle inside representing the lens"/></a></li>
+        <li><a href="https://soundcloud.com/joeyBADASS" target="_blank"><img src="images/soundcloud.jpg" alt="Black cloud shape with 10 horizontal lines on the left side"/></a></li>
+        <li><p>Charan&copy;</p></li>
+        <li><a href="https://open.spotify.com/artist/2P5sC9cVZDToPxyomzF1UH" target="_blank"><img src="images/spotify.png" alt="Black circle containing three curved horizontal lines, representing sound waves"></a></li>
+        <li><a href="https://x.com/joeyBADASS" target="_blank"><img src="images/twitter.jpg" alt="Black silhouette of a bird in mid-flight with wings extended upwards"/></a></li>
+    </ul>
+</footer>
+
+
+
+
+<script>
+const storyData = [
+    {
+        image: "images/early life.jpg",
+        text: "Early Life: Joey Bada$$, born Jo-Vaughn Virginie Scott, is a prestigious rapper from New York. He was the first in his Caribbean family to be born in America, raised in Bed-Stuy, Brooklyn. At age 11, he began writing poetry and rapping. Although originally pursuing acting at Edward R. Murrow High School, he shifted to music around 9th grade. Early in his journey, he went by the name JayOhVee."
+    },
+    {
+        image: "images/influences.jpg",
+        text: "Honorary Influences: Joey Bada$$ grew up immersed in New York’s legendary rap culture. He often cites NYC icons like Nas, Biggie Smalls, Jay-Z, and MF DOOM as his biggest influences. In interviews, including one with XXL, he also credits artists like Tupac, André 3000, Black Thought, and J Dilla for shaping his style and pushing the culture forward."
+    },
+    {
+        image: "images/young.jpg",
+      text: "Humble Beginnings: Joey first gained recognition with a YouTube freestyle that was reposted by World Star Hip-Hop. His breakout moment came in 2012 with the release of 'Survival Tactics' and his debut solo mixtape *1999*. Widely praised, it was named one of the best mixtapes of the year. He was soon featured on tracks by Mac Miller and A$AP Rocky, launching his career into the spotlight."
+    },
+    {
+        image: "images/now.jpg",
+        text: "Current Day Legend: Today, Joey Bada$$ stands as one of the most respected voices in hip-hop. He continues to release critically acclaimed music that blends thoughtful lyricism with modern production. Beyond music, Joey has expanded his influence into acting and activism, using his platform to speak on social issues affecting his community. With multiple albums, collaborations, and a loyal fanbase, he remains a powerful figure shaping the future of rap while honoring its roots."
+    }
+];
+
+function changeStory(index) {
+    //get the image and pargraph by id
+    const image = document.getElementById("story-image");
+    const text = document.getElementById("story-text");
+    //changes the image and pargraph
+    image.src = storyData[index].image;
+    text.textContent = storyData[index].text;
+}
+</script>
+</body>
+</html>
